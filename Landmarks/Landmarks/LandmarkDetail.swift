@@ -8,8 +8,13 @@ A view showing the details for a landmark.
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var userData: UserData
+
     var landmark: Landmark
 
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex { $0.id == landmark.id } ?? 0
+    }
     var body: some View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
@@ -42,5 +47,6 @@ struct LandmarkDetail: View {
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkDetail(landmark: landmarkData[2])
+            .environmentObject(UserData())
     }
 }
