@@ -1,3 +1,3 @@
-# Building Lists and Navigation
+# Drawing Paths and Shapes
 
-Use this project to code along with the [Building Lists and Navigation](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) tutorial.
+Use this project to code along with the [Drawing Paths and Shapes](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes) tutorial.
