@@ -1,10 +1,9 @@
-//
-//  BadgeSymbol.swift
-//  Landmarks
-//
-//  Created by Yoshimasa Aoki on 2019/11/23.
-//  Copyright © 2019 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that display a symbol in a badge.
+*/
 
 import SwiftUI
 
@@ -20,7 +19,7 @@ struct BadgeSymbol: View {
                 let middle = width / 2
                 let topWidth = 0.226 * width
                 let topHeight = 0.488 * height
-
+                
                 path.addLines([
                     CGPoint(x: middle, y: spacing),
                     CGPoint(x: middle - topWidth, y: topHeight - spacing),
@@ -28,7 +27,7 @@ struct BadgeSymbol: View {
                     CGPoint(x: middle + topWidth, y: topHeight - spacing),
                     CGPoint(x: middle, y: spacing)
                 ])
-
+                
                 path.move(to: CGPoint(x: middle, y: topHeight / 2 + spacing * 3))
                 path.addLines([
                     CGPoint(x: middle - topWidth, y: topHeight + spacing),

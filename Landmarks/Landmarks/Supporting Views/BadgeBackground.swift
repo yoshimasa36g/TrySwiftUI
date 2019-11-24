@@ -1,10 +1,9 @@
-//
-//  BadgeBackground.swift
-//  Landmarks
-//
-//  Created by Yoshimasa Aoki on 2019/11/23.
-//  Copyright © 2019 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that displays the background of a badge.
+*/
 
 import SwiftUI
 
@@ -20,19 +19,27 @@ struct BadgeBackground: View {
                 path.move(
                     to: CGPoint(
                         x: xOffset + width * 0.95,
-                        y: height * (0.20 + HexagonParameters.adjustment)))
+                        y: height * (0.20 + HexagonParameters.adjustment)
+                    )
+                )
                 
                 HexagonParameters.points.forEach {
-                    path.addLine(to: .init(
-                        x: xOffset + width * $0.useWidth.0 * $0.xFactors.0,
-                        y: height * $0.useHeight.0 * $0.yFactors.0))
+                    path.addLine(
+                        to: .init(
+                            x: xOffset + width * $0.useWidth.0 * $0.xFactors.0,
+                            y: height * $0.useHeight.0 * $0.yFactors.0
+                        )
+                    )
+                    
                     path.addQuadCurve(
                         to: .init(
                             x: xOffset + width * $0.useWidth.1 * $0.xFactors.1,
-                            y: height * $0.useHeight.1 * $0.yFactors.1),
+                            y: height * $0.useHeight.1 * $0.yFactors.1
+                        ),
                         control: .init(
                             x: xOffset + width * $0.useWidth.2 * $0.xFactors.2,
-                            y: height * $0.useHeight.2 * $0.yFactors.2)
+                            y: height * $0.useHeight.2 * $0.yFactors.2
+                        )
                     )
                 }
             }
@@ -41,10 +48,9 @@ struct BadgeBackground: View {
                 startPoint: .init(x: 0.5, y: 0),
                 endPoint: .init(x: 0.5, y: 0.6)
             ))
-                .aspectRatio(1, contentMode: .fit)
+            .aspectRatio(1, contentMode: .fit)
         }
     }
-    
     static let gradientStart = Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
     static let gradientEnd = Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
 }
