@@ -37,6 +37,7 @@
 		D6A78022238969CF0015BEEA /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A78021238969CF0015BEEA /* Badge.swift */; };
 		D6A780242389717F0015BEEA /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A780232389717F0015BEEA /* BadgeBackground.swift */; };
 		D6A78026238972030015BEEA /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A78025238972030015BEEA /* BadgeSymbol.swift */; };
+		D6A78028238ABA9B0015BEEA /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A78027238ABA9B0015BEEA /* RotatedBadgeSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		D6A78021238969CF0015BEEA /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		D6A780232389717F0015BEEA /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		D6A78025238972030015BEEA /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		D6A78027238ABA9B0015BEEA /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				D6A78021238969CF0015BEEA /* Badge.swift */,
 				D6A780232389717F0015BEEA /* BadgeBackground.swift */,
 				D6A78025238972030015BEEA /* BadgeSymbol.swift */,
+				D6A78027238ABA9B0015BEEA /* RotatedBadgeSymbol.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				B7310DD1229F6839001079B9 /* HexagonParameters.swift in Sources */,
 				B73948A1229F2E1F00C47603 /* LandmarkList.swift in Sources */,
 				D6A78026238972030015BEEA /* BadgeSymbol.swift in Sources */,
+				D6A78028238ABA9B0015BEEA /* RotatedBadgeSymbol.swift in Sources */,
 				B7394868229F194000C47603 /* SceneDelegate.swift in Sources */,
 				D6A780242389717F0015BEEA /* BadgeBackground.swift in Sources */,
 				B739486A229F194000C47603 /* LandmarkDetail.swift in Sources */,
