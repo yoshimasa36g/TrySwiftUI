@@ -1,10 +1,9 @@
-//
-//  Home.swift
-//  Landmarks
-//
-//  Created by Yoshimasa Aoki on 2019/11/25.
-//  Copyright © 2019 Apple. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing featured landmarks above a list of all of the landmarks.
+*/
 
 import SwiftUI
 
@@ -12,15 +11,17 @@ struct CategoryHome: View {
     var categories: [String: [Landmark]] {
         Dictionary(
             grouping: landmarkData,
-            by: { $0.category.rawValue })
+            by: { $0.category.rawValue }
+        )
     }
-
+    
     var featured: [Landmark] {
         landmarkData.filter { $0.isFeatured }
     }
-
+    
     @State var showingProfile = false
-
+    @EnvironmentObject var userData: UserData
+    
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
             Image(systemName: "person.crop.circle")
@@ -38,20 +39,21 @@ struct CategoryHome: View {
                     .frame(height: 200)
                     .clipped()
                     .listRowInsets(EdgeInsets())
+                
                 ForEach(categories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key,
-                                items: self.categories[key] ?? [])
+                    CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
-
+                
                 NavigationLink(destination: LandmarkList()) {
                     Text("See All")
                 }
             }
-            .navigationBarTitle("Featured")
+            .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost()
+                    .environmentObject(self.userData)
             }
         }
     }
@@ -64,8 +66,9 @@ struct FeaturedLandmarks: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
+            .environmentObject(UserData())
     }
 }
