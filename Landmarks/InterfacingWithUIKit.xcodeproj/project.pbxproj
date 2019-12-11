@@ -57,6 +57,7 @@
 		B7D587E922A09809006E8DCF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D587E822A09809006E8DCF /* Data.swift */; };
 		D62C54C52397E6E0009BE6A6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C54C42397E6E0009BE6A6 /* PageViewController.swift */; };
 		D62C54C72397EA05009BE6A6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62C54C62397EA05009BE6A6 /* PageView.swift */; };
+		D6E83B2523A1195600574E72 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E83B2423A1195600574E72 /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		C4E4AAA0C4E4035000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D62C54C42397E6E0009BE6A6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D62C54C62397EA05009BE6A6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		D6E83B2423A1195600574E72 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				B739486D229F194200C47603 /* Preview Content */,
 				D62C54C42397E6E0009BE6A6 /* PageViewController.swift */,
 				D62C54C62397EA05009BE6A6 /* PageView.swift */,
+				D6E83B2423A1195600574E72 /* PageControl.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				B739489F229F2D9700C47603 /* LandmarkRow.swift in Sources */,
 				D62C54C72397EA05009BE6A6 /* PageView.swift in Sources */,
 				B7D587DB22A08D67006E8DCF /* ProfileSummary.swift in Sources */,
+				D6E83B2523A1195600574E72 /* PageControl.swift in Sources */,
 				B7D2AAC5229F4D7C0061E5F5 /* UserData.swift in Sources */,
 				B7394881229F28B900C47603 /* Landmark.swift in Sources */,
 				B7D587DF22A08E1A006E8DCF /* ProfileEditor.swift in Sources */,
